@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+* {
+    font-family: 'Bree Serif', serif;
+}
+
+.jumbotron {
+    padding-top: 2rem;
+    background-color: #e2edff;
+}
+
+.about .row {
+    text-align: justify;
+}
+
+#project {
+    background-color: #e2edff;
+}
+
+#project .container .row .card {
+    border-radius: 15px;
+    box-shadow: -7px 9px 5px 2px rgba(0,0,0,0.23);
+    -webkit-box-shadow: -7px 9px 5px 2px rgba(0,0,0,0.23);
+    -moz-box-shadow: -7px 9px 5px 2px rgba(0,0,0,0.23);
+}
+
+#project .container .row .card:hover {
+    box-shadow: 0 5px #0d6efd;
+    height: 98%;
+}
+
+#project .container .row .card img {
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+}
+
+#contact h2 {
+    margin-top: -80px;
+    padding-top: 100px;
+}
+
+#contact .row input, #contact .row textarea {
+    border-radius: 10px;
+}
+
+#contact .row button:hover{
+    background-color: #3d84ee;
+}
+
+#contact .row button:focus {
+    outline: none;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width:576px) {
+    #project .container .row .col-md-4 .card  {
+        width: 20rem !important;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .navbar-dark .navbar-toggler {
+        color: #0d6efd;
+    }
+    .navbar ul {
+        margin: auto;
+        align-items: center;
+        width: 20%;
+        
+    }
+    #project .container .row .card{
+        margin: auto;
+    }
+    .about .row .col-md-4 p {
+        margin-bottom: 40px;
+    }
+    #contact .row label {
+        margin-left: 6%;
+        width: 20%;
+    }
+    #contact .row input, #contact .row textarea {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    #contact .row button {
+        /* background-color: #e2edff; */
+        margin-left: 6%;
+    }
+    #contact .row button:focus {
+       outline: none;
+    }
+}
+
+/* @media only screen and (max-width:992) {
+    #project .container .row .col-lg-4 .card {
+        margin: auto;
+    }
+} */
+
